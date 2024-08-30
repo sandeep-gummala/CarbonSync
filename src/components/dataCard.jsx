@@ -15,11 +15,13 @@ export default function DataCard({name, index}) {
             </div>
         </div>
 
-        : <div className="p-4 bg-white text-black w-fit hover:bg-gray-200 cursor-pointer rounded-lg">
-                <p className="text-sm font-semibold text-gray-600">{name}</p>
-                <div className="flex justify-between items-end space-x-16">
-                    <h1 className="text-4xl font-bold font-sans text-gray-900">3.1K</h1>
-                    <img src={images[index]} alt="" className="h-7" />
+        : <div className=" bg-white text-black w-fit hover:bg-gradient-to-tl from-[#4a3aff] to-[#c893fd] duration-1000 cursor-pointer rounded-lg">
+                <div className="p-4 hover:invert invert-0 duration-100">
+                    <p className="text-sm font-semibold">{name}</p>
+                    <div className="flex justify-between items-end space-x-16 ">
+                        <h1 className="text-4xl font-bold font-sans ">3.1K</h1>
+                        <img src={images[index]} alt="" className="h-7 " />
+                    </div>
                 </div>
             </div>
     )
